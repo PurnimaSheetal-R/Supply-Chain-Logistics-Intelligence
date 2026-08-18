@@ -1,19 +1,19 @@
-SUPPLY CHAIN LOGISTICS INTELLIGENCE PROJECT
+# SUPPLY CHAIN & LOGISTICS INTELLIGENCE SYSTEM
 
-1. PROJECT OVERVIEW
+## 1. Project Overview
 
-This project analyzes supply chain and logistics data to identify
-sales performance, profitability, customer behavior, market performance,
-and delivery-related risks.
+This project develops an end-to-end Supply Chain & Logistics Intelligence
+System using data analytics, SQL, statistics, forecasting, machine learning
+and Power BI.
+
+The project analyzes sales, products, customers, markets, shipping and
+delivery performance to identify operational risks and support business
+decision-making.
 
 Dataset:
 DataCo Smart Supply Chain Dataset
 
-Records: 180,519
-Columns: 53
-
-
-2. DATA CLEANING
+## 2. Data Cleaning & Preparation
 
 The dataset was checked for:
 
@@ -22,145 +22,125 @@ The dataset was checked for:
 - Data types
 - Empty columns
 - Invalid or unnecessary fields
+- Delivery and shipping-related values
 
-Duplicate rows found: 0
+Duplicate rows found: 0.
 
-The completely empty Product Description column was removed during
-data cleaning.
+The completely empty Product Description field was removed during cleaning.
+The processed data was then used for SQL analysis, EDA, forecasting and
+machine-learning analysis.
 
-The cleaned dataset was used for further analysis.
+## 3. Business Analysis
 
+The project analyzes:
 
-3. KEY BUSINESS FINDINGS
+- Sales and profitability
+- Product and category performance
+- Market and regional performance
+- Customer-segment performance
+- Shipping-mode performance
+- Delivery and late-delivery risk
+- Customer and logistics trends
 
-SALES PERFORMANCE
+## 4. Supply Chain KPIs
 
-Total Sales: 36,784,735.01
+Key KPIs include:
 
-Total Profit: 3,966,902.97
+- Total Sales
+- Total Profit
+- Unique Orders
+- Unique Customers
+- Average Shipping Duration
+- Late Delivery Risk
+- Sales by Market
+- Sales by Category
+- Sales by Customer Segment
 
-Unique Orders: 65,752
+## 5. Forecasting
 
-Unique Customers: 20,652
+Monthly sales trends were analyzed and a demand-forecasting component was
+developed to support future planning and inventory decisions.
 
+Forecast outputs and visualizations are included in the project repository.
 
-4. MARKET ANALYSIS
+## 6. Machine Learning
 
-Europe generated the highest sales with approximately
-10.87 million.
+A late-delivery prediction component was developed to identify orders that
+may be at risk of late delivery.
 
-LATAM generated approximately 10.28 million.
+The project includes:
 
-Pacific Asia generated approximately 8.27 million.
+- Late-delivery prediction
+- Model evaluation
+- Confusion matrix
+- Prediction-related analysis
 
-USCA generated approximately 5.07 million.
+## 7. Power BI Dashboard
 
-Africa generated approximately 2.29 million.
+An interactive Power BI dashboard was created containing:
 
+- Sales analysis
+- Profit analysis
+- Order status
+- Market analysis
+- Product analysis
+- Sales trends
+- Shipping and delivery analysis
+- Geographic analysis
+- Average shipping days
 
-5. PRODUCT CATEGORY ANALYSIS
+Interactive slicers are provided for:
 
-The highest-selling category was Fishing with approximately
-6.93 million in sales.
+- Market
+- Order Region
+- Order Status
 
-The next highest-performing categories were:
+Power BI dashboard file:
+Supply_Chain_Logistics_Dashboard.pbix
 
-- Cleats
-- Camping & Hiking
-- Cardio Equipment
-- Women's Apparel
-- Water Sports
+## 8. Business Recommendations
 
+1. Improve logistics planning to reduce late-delivery risk.
+2. Investigate shipping modes with high delivery risk.
+3. Focus inventory and marketing on high-performing categories.
+4. Monitor high-performing markets such as Europe and LATAM.
+5. Develop targeted strategies for high-value customer segments.
+6. Monitor cancelled orders and investigate their causes.
+7. Use demand trends and forecasting to improve planning.
 
-6. SHIPPING ANALYSIS
+## 9. Technology Stack
 
-Standard Class generated the highest sales with approximately
-22.02 million.
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- SQL
+- SQLite
+- Scikit-learn
+- Forecasting
+- Power BI
+- VS Code
+- Git
+- GitHub
 
-However, delivery performance is an important concern.
+## 10. Project Structure
 
-Late delivery risk by shipping mode:
+supply-chain-logistics-project/
+├── data/
+├── visualizations/
+├── analysis.sql
+├── cleaning.py
+├── database.py
+├── run_sql.py
+├── visualization.py
+├── README.md
+└── Supply_Chain_Logistics_Dashboard.pbix
 
-First Class: 95.32%
-Second Class: 76.63%
-Same Day: 45.74%
-Standard Class: 38.07%
+## 11. Conclusion
 
+The project provides an analytical view of supply-chain performance across
+sales, products, customers, markets, shipping and delivery operations.
 
-7. DELIVERY PERFORMANCE
-
-Late delivery: 98,977 orders
-
-Advance shipping: 41,592 orders
-
-Shipping on time: 32,196 orders
-
-Shipping canceled: 7,754 orders
-
-Overall late delivery risk is approximately 54.83%.
-
-
-8. CUSTOMER SEGMENT ANALYSIS
-
-Consumer customers generated the highest sales and profit.
-
-Consumer:
-Sales = 19.10 million
-Profit = 2.07 million
-
-Corporate:
-Sales = 11.17 million
-Profit = 1.20 million
-
-Home Office:
-Sales = 6.52 million
-Profit = 0.69 million
-
-
-9. BUSINESS RECOMMENDATIONS
-
-1. Improve delivery planning and logistics operations to reduce
-   the high late-delivery rate.
-
-2. Investigate First Class and Second Class shipping because they
-   have particularly high late-delivery risk.
-
-3. Focus marketing and inventory planning on high-performing
-   categories such as Fishing, Cleats, and Camping & Hiking.
-
-4. Europe and LATAM should receive additional attention because
-   they generate the highest sales.
-
-5. Develop targeted strategies for Consumer customers because
-   they contribute the largest share of sales and profit.
-
-6. Monitor canceled orders and identify the major causes behind
-   cancellations.
-
-7. Use monthly sales trends to improve inventory and demand
-   forecasting.
-
-
-10. TOOLS USED
-
-Python
-Pandas
-Matplotlib
-SQLite
-SQL
-VS Code
-
-
-11. PROJECT CONCLUSION
-
-The analysis provides a complete view of supply chain performance
-from sales and profitability to customer segments and delivery
-operations.
-
-The most important business challenge identified is delivery
-performance, with a high proportion of orders associated with
-late-delivery risk.
-
-Improving logistics efficiency while maintaining focus on
-high-performing markets, products, and customer segments can
-help improve overall supply chain performance and profitability.
+The analysis highlights delivery performance as an important operational
+risk and demonstrates how analytics, forecasting, machine learning and
+business intelligence can support better supply-chain decision-making.
